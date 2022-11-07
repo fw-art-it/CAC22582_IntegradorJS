@@ -1,0 +1,621 @@
+*{
+  margin:0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    font-family: sans-serif; 
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgb(53,58,64);
+    align-items: center;
+    width: 100%;
+    }
+  
+  .cajaLogo {
+    flex: 30%;
+    font-size: 1.375rem; 
+    text-align: center;
+  }
+
+  .cajaLogo img {
+    width: 30%;
+    vertical-align: middle;
+  }
+
+  .cajaLogo span {
+    font-weight: 500;
+    color: #ffffff;
+  }
+  
+  .cajaMenu {
+    flex: 70%;
+    text-align: center;
+  }
+
+  header .flex-container .cajaMenu nav li {
+    display: inline-block;
+    text-align: justify;
+  }
+
+  header .flex-container .cajaMenu nav li a {
+    text-decoration: none;   
+    font-size: 1em; 
+    color: #ffffff;
+    padding-left: 1.25em;
+  }
+
+  header .imagenPrincipal img {
+    opacity: 0.5;
+    filter: alpha(opacity=100);
+    }
+
+  header .imagenPrincipal {
+    position: relative;
+    display: inline-block;
+    background-color: rgba(0,0,0,0.8);
+    }
+
+  header .imagenPrincipal p {
+    position: absolute;
+    top: 45%;
+    left: 46%;
+    right: 10%;
+    font-size: 12;
+    text-align: right;
+    font-weight: 400;
+    line-height: 1.5;
+    color: white;
+  }
+
+  /* Clases barra de navegación*/ 
+  .navbarMod {
+    background-color: rgb(53,58,64);
+    justify-content: space-between;    
+  }
+
+  .navbar-nav .nav-item .itemGreen {
+    color: rgb(46,166,69);
+  }
+
+  /*Clases sección principal*/
+  .sectionPrincipal{
+    background-image: linear-gradient(to right,rgb(0 0 0 /.5),rgb(0 0 0 /.8)), url("../assets/imagenes/ba1.jpg");
+    height:80vh;
+    display: flex;
+    justify-content:flex-end;
+    align-items:center;
+    padding-right: 10em;
+  }
+
+  .imagenPrincipal {
+    filter: brightness(50%);
+    height:85vh;
+  }
+
+  .pbSobreimagen {
+    padding-bottom: 90px;
+  }
+
+  .contenidoPrincipal{
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+      text-align: right;
+      color:white;
+      padding: 0 0 40 0;
+  }
+
+  .parrafoPrincipal{
+    font-size: 1em;
+    line-height:2rem;
+    text-align: right;
+ }
+
+  .botonesPrincipal {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  /*Clases sección tarjetas*/
+ .sectionTarjetas{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+  .tituloTarjetas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .titulo1Tarjetas {
+    margin-top: 1em;
+    font-size: 1em;
+    margin-bottom: 0;
+  }
+
+  .titulo2Tarjetas {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 1em;
+  }
+
+.tarjetaImagen {
+    width: 100%;
+    border-radius: 5px 5px 0px 0px;
+}
+.tarjetaContenido {
+    padding:1rem;
+}
+.tarjetaParrafo {
+    width:90%;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+}
+
+.tarjetaBotones {
+  margin-top: 0.5rem;
+}
+
+.btn-tarjeta {
+  padding: 0 0.2rem;
+  font-size: 0.8rem;
+  font-weight: bolder;
+  border-radius: 0.3rem;
+}
+
+.btn-javascript {
+  background-color: rgb(254, 193, 7);
+  border-color: rgb(254, 193, 7);
+}
+
+.btn-react {
+  background-color: rgb(23, 162, 185);
+  border-color: rgb(23, 162, 185);
+  color: rgb(255, 255, 255);
+}
+
+.btn-negocios {
+  background-color: rgb(108, 117, 126);
+  border-color: rgb(108, 117, 126);
+  color: rgb(255, 255, 255);
+}
+
+.btn-startup {
+  background-color: rgb(221, 52, 71);
+  border-color: rgb(221, 52, 71);
+  color: rgb(255, 255, 255);
+}
+
+.tarjetaTitulo {
+  margin-top: 0.2rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding-bottom: 0.5rem;
+}
+
+/*Clases banner*/
+.bannerDerecha {
+  height:100%;
+  padding:2rem ;
+  background-color: rgb(51, 58, 64);
+  color:white;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.bannerDerecha h3 {
+  font-weight: bold;
+  font-size: 1.8rem
+}
+
+.bannerDerecha .btn {
+  font-size: 1rem;
+}
+
+/*Clases formulario*/
+.sectionFormulario {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedorFormulario {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  align-items: center;
+  width: 60%;
+}
+
+.contenedorForm {
+  width:90%;
+
+}
+
+.tituloForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titulo1Form {
+  margin-top: 10px;
+  font-size: 0.75em;
+  margin-bottom: 0%;
+}
+
+.titulo2Form {
+  margin-top: -5px;
+  font-size: 2em;
+  font-weight: 550;
+  }
+
+.anotateOrador {
+  margin-top: -12px;
+  font-size: 1rem;
+}
+
+.anotateOrador span {
+  border-bottom: 2px dotted;
+}
+
+#formControlTextarea1 {
+  font-size: 1.3rem;
+}
+
+.pieContrlTextarea1 {
+  margin-top: 0px;
+  font-size: 0.9rem;
+  color: grey;
+}
+
+.btn-form {
+  color: #fff;
+  background-color: rgb(150, 201, 62);
+  border-color: rgb(150, 201, 62);
+  font-size: 0.9rem;
+}
+
+/* Clases footer*/
+.pieDePagina {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(30, 79, 109);
+  margin-top: 20px;
+}
+
+/* Clases sección cards - comprarTickets.html*/  
+.sectionCards {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenedorCards {
+position: relative;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+min-width: 0;
+width: 54%;
+padding: 30px 0px 15px 0px;
+}
+
+.contenedorCard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 13.05em;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 5px;
+}
+
+.card1 {
+  border: 2px solid rgb(13, 110, 253);
+  background-color: #0d6efd;
+
+}
+
+.card2 {
+  border: 2px solid rgb(13, 202, 240);
+  background-color: rgb(13, 202, 240);
+
+}
+
+.card3 {
+  border: 2px solid rgb(255, 193, 7);
+  background-color: rgb(255, 193, 7);
+
+}
+.tituloCards {
+  position: relative;
+  padding: 0.7rem 1rem;
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+.card-body-mod {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  justify-content: center;
+  align-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.contenidoCards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  color: black;
+  padding: 1rem;
+}
+
+.card-title-mod {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.card-text1 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+
+}
+
+.card-text2 {
+  font-size: 0.8rem;
+  color: grey;
+  text-align: center;
+}
+
+/*Clases form comprarTickets.html*/
+
+.titulo1FormTickets {
+  margin-top: 10px;
+  font-size: 0.75em;
+  margin-bottom: 0%;
+}
+
+.titulo2FormTickets {
+  margin-top: -5px;
+  font-size: 2em;
+  font-weight: 550;
+  }
+
+.totalTickets {
+  background-color: rgb(207, 226, 255);
+  padding: 25px 12px 10px 12px;
+  color: rgb(53, 53, 134);
+  border-radius: 5px;
+}
+
+.totalPago {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+/*celular* xs-sm */
+@media screen and (max-width:767px){
+
+  /*imagen principal*/
+  .sectionPrincipal{
+    height: 60vh;
+    justify-content: center;
+    padding-right: 0em;
+  }
+
+  .pbSobreimagen {
+    padding-bottom: 190px;
+  }
+
+  .contenidoPrincipal{
+      width: 100%;
+    }
+
+  .parrafoPrincipal{
+    font-size: 0.8em;
+    line-height:1rem;
+    text-align: end;
+  }
+
+  .botonesPrincipal {
+    justify-content: flex-end;
+  }
+
+  .btn {
+    font-size:0.8rem;
+  }
+
+  .btn-success {
+    background-color: rgb(41, 167, 68);
+    border-color: rgb(41, 167, 68);
+  }
+
+  .bannerDerecha {
+    padding:1.5rem ;
+    font-size: 0.8rem;
+  }
+  
+  .bannerDerecha h3 {
+    font-weight: bold;
+    font-size: 1.4rem
+  }
+  
+  .bannerDerecha .btn {
+    font-size: 0.8rem;
+  }
+
+/*comprarTickets.html*/
+  .contenedorCards {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 0;
+    width: 90%;
+    padding: 15px 0px 15px 0px;
+    }
+
+  .contenedorCard {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 13em;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 5px;
+    margin-bottom: 5px;
+  }
+
+  .contenedorFormulario {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    align-items: center;
+    width: 90%;
+  }
+
+  .contenedorForm {
+    width: 80%;
+  }  
+
+}
+
+/*tablet md*/
+@media screen and (min-width:768px) and (max-width:991px){
+
+  .pbSobreimagen {
+    padding-bottom: 140px;
+  }
+  
+  .contenidoPrincipal{
+    width: 75%;
+  }
+
+  .parrafoPrincipal{
+    font-size: 0.9em;
+    line-height:1.3rem;
+  }
+
+  .btn {
+    font-size:0.9rem;
+  }
+
+  .btn-success {
+    background-color: rgb(41, 167, 68);
+    border-color: rgb(41, 167, 68);
+  }
+
+  .bannerDerecha {
+    padding:1.2rem ;
+    font-size: 0.75rem;
+  }
+  
+  .bannerDerecha h3 {
+    font-weight: bold;
+    font-size: 1.2rem
+  }
+  
+  .bannerDerecha .btn {
+    font-size: 0.75rem;
+  }
+
+  /*comprarTickets.html*/
+  .contenedorCards {
+    width: 72%;
+  }
+
+  .contenedorFormulario {
+    width: 80%;
+  }
+
+}
+
+/*tamaño lg */
+@media screen and (min-width:992px) and (max-width:1199px){
+
+  .contenidoPrincipal{
+    width: 75%;
+  }
+
+  .parrafoPrincipal{
+    font-size: 1em;
+    line-height:1.5rem;
+  }
+
+  .btn {
+    font-size:1rem;
+  }
+
+  .btn-success {
+    background-color: rgb(41, 167, 68);
+    border-color: rgb(41, 167, 68);
+  }
+
+  .bannerDerecha {
+    padding:1.8rem ;
+    font-size: 0.9rem;
+  }
+  
+  .bannerDerecha h3 {
+    font-weight: bold;
+    font-size: 1.6rem
+  }
+  
+  .bannerDerecha .btn {
+    font-size: 0.9rem;
+  }
+
+
+}
+
+
+/*tamaño xl */
+@media screen and (min-width:1200px){
+
+  .btn {
+    font-size:1.2rem;
+  }
+
+  .btn-success {
+    background-color: rgb(41, 167, 68);
+    border-color: rgb(41, 167, 68);
+  }
+
+}

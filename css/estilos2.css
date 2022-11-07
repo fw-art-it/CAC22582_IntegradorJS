@@ -1,0 +1,335 @@
+*{
+  margin:0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    font-family: sans-serif; 
+}
+
+/* Clases barra de navegación - repetido*/ 
+  .navbarMod {
+    background-color: rgb(53,58,64);
+    justify-content: space-between;    
+  }
+
+  .navbar-nav .nav-item .itemGreen {
+    color: rgb(46,166,69);
+  }
+
+ 
+/* Clases sección cards - comprarTickets.html*/  
+.sectionCards {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenedorCards {
+position: relative;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+min-width: 0;
+width: 54%;
+padding: 30px 0px 15px 0px;
+}
+
+.contenedorCard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 13.05em;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 5px;
+}
+
+.card1 {
+  border: 2px solid rgb(13, 110, 253);
+  background-color: #0d6efd;
+
+}
+
+.card2 {
+  border: 2px solid rgb(13, 202, 240);
+  background-color: rgb(13, 202, 240);
+
+}
+
+.card3 {
+  border: 2px solid rgb(255, 193, 7);
+  background-color: rgb(255, 193, 7);
+
+}
+.tituloCards {
+  position: relative;
+  padding: 0.7rem 1rem;
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+.card-body-mod {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  justify-content: center;
+  align-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.contenidoCards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  color: black;
+  padding: 1rem;
+}
+
+.card-title-mod {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.card-text1 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+
+}
+
+.card-text2 {
+  font-size: 0.8rem;
+  color: grey;
+  text-align: center;
+}
+
+/* Clases formulario - comprarTickets.html*/
+
+  .sectionFormulario {
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .contenedorFormulario {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    align-items: center;
+    width: 60%;
+  }
+
+  .contenedorForm {
+    width:90%;
+
+  }
+
+  .tituloForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .titulo1FormTickets {
+    margin-top: 10px;
+    font-size: 0.75em;
+    margin-bottom: 0%;
+  }
+
+  .titulo2FormTickets {
+    margin-top: -5px;
+    font-size: 2em;
+    font-weight: 550;
+    }
+/*
+  .anotateOrador {
+    margin-top: -12px;
+    font-size: 1rem;
+  }
+
+  .anotateOrador span {
+    border-bottom: 2px dotted;
+  }
+
+  #formControlTextarea1 {
+    font-size: 1.3rem;
+  }
+
+  .pieContrlTextarea1 {
+    margin-top: 0px;
+    font-size: 0.9rem;
+    color: grey;
+  }
+  */
+
+  .totalTickets {
+    background-color: rgb(207, 226, 255);
+    padding: 25px 12px 10px 12px;
+    color: rgb(53, 53, 134);
+    border-radius: 5px;
+  }
+
+  .btn-form {
+    color: #fff;
+    background-color: rgb(150, 201, 62);
+    border-color: rgb(150, 201, 62);
+    font-size: 0.9rem;
+  }
+
+  /* Clases footer*/
+  .pieDePagina {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(30, 79, 109);
+    margin-top: 20px;
+  }
+
+
+/*celular* xs*/
+@media screen and (max-width:576px) {
+
+  .contenedorCards {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 0;
+    width: 90%;
+    padding: 10px 0px 10px 0px;
+    }
+
+    .contenedorCard {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+      height: 11em;
+      align-items: center;
+      justify-content: flex-start;
+      border-radius: 5px;
+      margin-bottom: 5px;
+    }
+
+    .card-body-mod {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      background-color: white;
+      justify-content: center;
+      align-content: center;
+      border: 1px solid rgba(255, 255, 255, 0.125);
+      border-bottom-left-radius: 3px;
+      border-bottom-right-radius: 3px;
+      line-height: 1.5em;
+    }
+
+    .contenedorFormulario {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+      align-items: center;
+      width: 90%;
+    }
+
+    .contenedorForm {
+      width: 70%;
+    }
+
+    .titulo2Form {
+      margin-top: -5px;
+      font-size: 1.8em;
+      font-weight: 550;
+      }
+
+}
+
+/*celular* xm-sm */
+@media screen and (min-width:577px) and (max-width:768px){
+
+  .contenedorCards {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 0;
+    width: 90%;
+    padding: 15px 0px 15px 0px;
+    }
+
+    .contenedorCard {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      height: 13em;
+      align-items: center;
+      justify-content: flex-start;
+      border-radius: 5px;
+      margin-bottom: 5px;
+    }
+
+    .contenedorFormulario {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+      align-items: center;
+      width: 90%;
+    }
+
+    .contenedorForm {
+      width: 80%;
+    }
+}
+
+/*tablet md*/
+@media screen and (min-width:769px) and (max-width:991px){
+  .contenedorCards {
+    width: 72%;
+  }
+
+.contenedorFormulario {
+    width: 80%;
+  }
+
+}
+
+/*tamaño lg */
+@media screen and (min-width:992px) and (max-width:1199px){
+
+
+}
+
+
+/*tamaño xl */
+@media screen and (min-width:1200px){
+
+
+
+
+}
